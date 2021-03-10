@@ -32,10 +32,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0 auto;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -130,6 +126,17 @@ blockquote {
   margin: 0 0 24px;
   font-family: 'Times New Roman', serif;
 }
+.c-blockquote {
+  color: #00b37d;
+  background-color: #f2faf8;
+  font-family: 'Droid Serif', 'Times New Roman', serif;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
 
 blockquote * {
   font-size: inherit;
@@ -210,6 +217,10 @@ a:focus {
   padding: 24px 24px 0;
 }
 
+.c-article__date {
+  margin-bottom: 0;
+}
+
 .c-article__body {
   padding: 0 24px;
 }
@@ -227,14 +238,14 @@ a:focus {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
+  .c-article__title {
+    font-size: 36px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  html {
-    padding: 48px 48px 24px;
-  }
   h1 {
     font-size: 58px;
     line-height: 64px;
@@ -247,6 +258,9 @@ a:focus {
   }
   .c-article__body {
     padding: 24px 48px;
+  }
+  .c-article__title {
+    font-size: 46px;
   }
 }
 
@@ -267,11 +281,17 @@ a:focus {
     flex-direction: column;
     align-items: start;
   }
+  .c-article__title {
+    font-size: 52px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+  .c-article__title {
+    font-size: 58px;
+  }
 }
 
 /*
